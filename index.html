@@ -117,14 +117,6 @@ tbody tr.highlight td:first-child{border-left:3px solid var(--b10-blue);padding-
   width:32px;height:32px;border-radius:8px;background:#fff;padding:3px;
   object-fit:contain;flex-shrink:0;border:1px solid var(--border);
 }
-/* Full wordmark / lockup logo for new-investments table */
-.lockup-cell{display:flex;align-items:center;min-width:200px;min-height:40px}
-.lockup{max-height:32px;max-width:200px;width:auto;height:auto;object-fit:contain;display:block}
-.lockup-text{
-  font-family:'Inter',sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.4px;
-  color:var(--text);line-height:1;white-space:nowrap;
-}
-.lockup-text .dot{color:var(--b10-blue)}
 .company-name{font-weight:600;color:var(--text);font-size:14px}
 .company-round{font-size:11px;color:var(--text-muted);font-weight:500}
 .investor-cell{display:flex;align-items:center;gap:8px;max-width:180px}
@@ -310,7 +302,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             <tr class="highlight">
               <td>
                 <div class="company-cell">
-                  <img class="company-logo" src="https://icon.horse/icon/slide.com" alt="Slide">
+                  <img class="company-logo" src="assets/slide-icon.png" alt="Slide">
                   <div>
                     <div class="company-name">Slide</div>
                     <div class="company-round">MSP-focused BCDR platform</div>
@@ -319,10 +311,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
               </td>
               <td>Series B ($70M)</td>
               <td>
-                <div class="investor-cell">
-                  <img class="investor-logo" src="https://icon.horse/icon/generalcatalyst.com" alt="">
-                  <span class="investor-name">General Catalyst</span>
-                </div>
+                <span class="investor-name">General Catalyst</span>
               </td>
               <td>Announced Mar 10, 2026</td>
               <td>Series A</td>
@@ -333,7 +322,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             <tr>
               <td>
                 <div class="company-cell">
-                  <img class="company-logo" src="https://icon.horse/icon/loopreturns.com" alt="Loop AI">
+                  <img class="company-logo" src="assets/loop-icon.png" alt="Loop AI">
                   <div>
                     <div class="company-name">Loop AI</div>
                     <div class="company-round">Restaurant revenue recovery</div>
@@ -342,10 +331,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
               </td>
               <td>Series A ($14M)</td>
               <td>
-                <div class="investor-cell">
-                  <img class="investor-logo" src="https://icon.horse/icon/nyca.com" alt="">
-                  <span class="investor-name">NYCA</span>
-                </div>
+                <span class="investor-name">NYCA</span>
               </td>
               <td>Announced Feb 2, 2026</td>
               <td>Seed</td>
@@ -356,7 +342,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             <tr class="highlight">
               <td>
                 <div class="company-cell">
-                  <img class="company-logo" src="https://icon.horse/icon/greenboard.com" alt="Greenboard">
+                  <img class="company-logo" src="assets/greenboard-icon.png" alt="Greenboard">
                   <div>
                     <div class="company-name">Greenboard</div>
                     <div class="company-round">AI-native securities compliance</div>
@@ -365,10 +351,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
               </td>
               <td>Series A ($15.5M)</td>
               <td>
-                <div class="investor-cell">
-                  <img class="investor-logo" src="https://icon.horse/icon/base10.vc" alt="">
-                  <span class="investor-name">Base10 (led)</span>
-                </div>
+                <span class="investor-name">Base10 (led)</span>
               </td>
               <td>Closed Sep 2025 · Public May 11, 2026</td>
               <td>Seed (YC, Mar 2024)</td>
@@ -447,8 +430,12 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
           <tbody>
             <tr>
               <td>
-                <div class="lockup-cell">
-                  <img class="lockup" src="assets/traza-lockup.png" alt="Traza AI">
+                <div class="company-cell">
+                  <img class="company-logo" src="assets/traza-icon.png" alt="Traza AI">
+                  <div>
+                    <div class="company-name">Traza AI</div>
+                    <div class="company-round">Announced Feb 2026</div>
+                  </div>
                 </div>
               </td>
               <td>Seed</td>
@@ -459,8 +446,12 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             </tr>
             <tr>
               <td>
-                <div class="lockup-cell">
-                  <img class="lockup" src="assets/keystone-lockup.png" alt="Keystone">
+                <div class="company-cell">
+                  <img class="company-logo" src="assets/keystone-icon.png" alt="Keystone">
+                  <div>
+                    <div class="company-name">Keystone</div>
+                    <div class="company-round">Closed Oct 2025</div>
+                  </div>
                 </div>
               </td>
               <td>Seed</td>
@@ -471,8 +462,12 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             </tr>
             <tr>
               <td>
-                <div class="lockup-cell">
-                  <img class="lockup" src="assets/phonely-lockup.png" alt="Phonely">
+                <div class="company-cell">
+                  <img class="company-logo" src="assets/phonely-icon.png" alt="Phonely">
+                  <div>
+                    <div class="company-name">Phonely</div>
+                    <div class="company-round">Closed Dec 2025</div>
+                  </div>
                 </div>
               </td>
               <td>Series A</td>
@@ -483,8 +478,12 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             </tr>
             <tr>
               <td>
-                <div class="lockup-cell">
-                  <img class="lockup" src="assets/amera-lockup.png" alt="Amera">
+                <div class="company-cell">
+                  <img class="company-logo" src="assets/amera-icon.png" alt="Amera">
+                  <div>
+                    <div class="company-name">Amera</div>
+                    <div class="company-round">Closed Aug 2025 · YC</div>
+                  </div>
                 </div>
               </td>
               <td>Seed (YC)</td>
@@ -495,8 +494,12 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
             </tr>
             <tr>
               <td>
-                <div class="lockup-cell">
-                  <img class="lockup" src="assets/denki-lockup.png" alt="Denki">
+                <div class="company-cell">
+                  <img class="company-logo" src="assets/denki-icon.png" alt="Denki">
+                  <div>
+                    <div class="company-name">Denki</div>
+                    <div class="company-round">Closed Aug 2025 · upsized Sep</div>
+                  </div>
                 </div>
               </td>
               <td>Seed (YC)</td>
@@ -513,7 +516,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
     <div class="missing-grid">
       <div class="missing-card">
         <div class="missing-card-header">
-          <img class="company-logo" src="https://icon.horse/icon/traza.ai" alt="Traza AI">
+          <img class="company-logo" src="assets/traza-icon.png" alt="Traza AI">
           <div>
             <h4>Traza AI</h4>
             <div class="sub">Seed · Base10-led</div>
@@ -524,7 +527,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 
       <div class="missing-card">
         <div class="missing-card-header">
-          <img class="company-logo" src="https://icon.horse/icon/keystone.com" alt="Keystone">
+          <img class="company-logo" src="assets/keystone-icon.png" alt="Keystone">
           <div>
             <h4>Keystone</h4>
             <div class="sub">Seed · Base10-led · Oct 2025</div>
@@ -535,7 +538,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 
       <div class="missing-card">
         <div class="missing-card-header">
-          <img class="company-logo" src="https://icon.horse/icon/phonely.ai" alt="Phonely">
+          <img class="company-logo" src="assets/phonely-icon.png" alt="Phonely">
           <div>
             <h4>Phonely</h4>
             <div class="sub">Series A · Base10-led · Dec 2025</div>
@@ -547,7 +550,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 
       <div class="missing-card">
         <div class="missing-card-header">
-          <img class="company-logo" src="https://icon.horse/icon/amera.com" alt="Amera">
+          <img class="company-logo" src="assets/amera-icon.png" alt="Amera">
           <div>
             <h4>Amera</h4>
             <div class="sub">Seed · Base10-led · Aug 2025</div>
@@ -559,7 +562,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 
       <div class="missing-card">
         <div class="missing-card-header">
-          <img class="company-logo" src="https://icon.horse/icon/denki.com" alt="Denki">
+          <img class="company-logo" src="assets/denki-icon.png" alt="Denki">
           <div>
             <h4>Denki</h4>
             <div class="sub">Seed · Co-led · Aug 2025</div>
@@ -601,13 +604,6 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 
 <script>
 (function(){
-  function lockupFallback(img){
-    var name = (img.getAttribute('alt') || '').trim() || 'Company';
-    var span = document.createElement('span');
-    span.className = 'lockup-text';
-    span.textContent = name;
-    img.replaceWith(span);
-  }
   function fallback(img){
     var isCompany = img.classList.contains('company-logo');
     var isAvatar = img.classList.contains('avatar');
@@ -635,16 +631,14 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
     img.replaceWith(div);
   }
   function check(img){
-    var isLockup = img.classList.contains('lockup');
-    var handler = isLockup ? lockupFallback : fallback;
     if(img.complete){
-      if(img.naturalWidth === 0) handler(img);
+      if(img.naturalWidth === 0) fallback(img);
     } else {
-      img.addEventListener('error', function(){ handler(img); });
-      img.addEventListener('load', function(){ if(img.naturalWidth === 0) handler(img); });
+      img.addEventListener('error', function(){ fallback(img); });
+      img.addEventListener('load', function(){ if(img.naturalWidth === 0) fallback(img); });
     }
   }
-  document.querySelectorAll('img.company-logo, img.investor-logo, img.avatar, img.lockup, .chip img').forEach(check);
+  document.querySelectorAll('img.company-logo, img.investor-logo, img.avatar, .chip img').forEach(check);
 })();
 </script>
 
