@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fund III Q1 2026 | Fund Commentary — Base10 Partners</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --b10-blue:#45AEEB;
+  --b10-blue-hover:#26A6ED;
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --surface-2:#F4F8FB;
+  --border:#E6ECF2;
+  --text:#1A1A1A;
+  --text-dim:#343434;
+  --text-muted:#6C757D;
+  --green:#22C55E;
+  --amber:#EAB308;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.55;
+}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+
+/* HERO */
+.hero{
+  padding:72px 32px 56px;
+  background:radial-gradient(ellipse at top right,rgba(69,174,235,0.12),transparent 60%),linear-gradient(180deg,#F4F8FB,#FFFFFF);
+  border-bottom:1px solid var(--border);
+}
+.hero-inner{max-width:1200px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.brand-logo{height:28px;width:auto;display:block}
+.brand-divider{width:1px;height:22px;background:var(--border)}
+.brand-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);font-weight:600}
+.eyebrow{
+  display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--b10-blue);font-weight:700;margin-bottom:18px;
+  padding:6px 12px;background:rgba(69,174,235,0.1);border:1px solid rgba(69,174,235,0.3);border-radius:20px;
+}
+h1{
+  font-size:54px;font-weight:800;letter-spacing:-1.5px;line-height:1.05;
+  margin-bottom:20px;max-width:900px;
+}
+h1 .accent{color:var(--b10-blue)}
+.hero-sub{
+  font-size:19px;color:var(--text-dim);max-width:820px;line-height:1.55;font-weight:400;
+}
+.hero-sub strong{color:var(--text);font-weight:600}
+.hero-meta{
+  margin-top:32px;display:flex;gap:28px;flex-wrap:wrap;font-size:13px;color:var(--text-muted);
+}
+.hero-meta span strong{color:var(--text);font-weight:600}
+
+/* SECTIONS */
+section{padding:64px 32px}
+section.letter-open{padding-top:56px;padding-bottom:24px}
+.salutation{font-size:17px;color:var(--text);font-weight:500;margin-bottom:16px}
+.letter-body{font-size:17px;color:var(--text-dim);max-width:880px;line-height:1.65}
+.letter-body strong{color:var(--text);font-weight:600}
+.section-label{
+  display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--b10-blue);font-weight:700;margin-bottom:12px;
+}
+h2{font-size:32px;font-weight:700;letter-spacing:-0.5px;margin-bottom:12px}
+h3{font-size:22px;font-weight:700;letter-spacing:-0.3px;margin-top:40px;margin-bottom:14px}
+.section-intro{color:var(--text-dim);font-size:16px;max-width:820px;margin-bottom:36px}
+.section-intro a{color:var(--b10-blue);text-decoration:none;border-bottom:1px solid rgba(69,174,235,0.3)}
+.section-intro a:hover{border-bottom-color:var(--b10-blue)}
+.section-intro.tight{margin-bottom:20px}
+
+/* KPIs */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+.kpi-row.three{grid-template-columns:repeat(3,1fr)}
+.kpi-row.two{grid-template-columns:repeat(2,1fr)}
+.kpi-row + .kpi-row{margin-top:16px}
+.kpi{
+  background:#FFFFFF;border:1px solid var(--border);border-radius:12px;padding:24px;
+  box-shadow:0 2px 20px rgba(26,26,26,0.04);
+}
+.kpi .label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);font-weight:700;margin-bottom:8px}
+.kpi .value{font-size:32px;font-weight:800;letter-spacing:-1px;color:var(--b10-blue);line-height:1}
+.kpi .value.tk{color:var(--text-muted);font-style:italic;letter-spacing:0}
+.kpi .sub{font-size:12px;color:var(--text-dim);margin-top:6px}
+
+/* Inline TK marker */
+.tk{color:var(--text-muted);font-style:italic;font-weight:500}
+
+/* TABLE */
+.table-wrap{
+  background:#FFFFFF;border:1px solid var(--border);border-radius:12px;overflow:hidden;
+  box-shadow:0 2px 24px rgba(26,26,26,0.05);
+}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:1000px}
+thead th{
+  background:#F4F8FB;color:var(--text-muted);
+  font-size:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;
+  padding:14px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;
+}
+thead th.num{text-align:right}
+tbody td{padding:14px 12px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:middle}
+tbody td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+tbody tr:hover{background:#F4F8FB}
+tbody tr.highlight{background:rgba(69,174,235,0.06)}
+tbody tr.highlight td:first-child{border-left:3px solid var(--b10-blue);padding-left:9px}
+.company-cell{display:flex;align-items:center;gap:12px;min-width:200px}
+.company-logo{
+  width:32px;height:32px;border-radius:8px;background:#fff;padding:3px;
+  object-fit:contain;flex-shrink:0;border:1px solid var(--border);
+}
+/* Full wordmark / lockup logo for new-investments table */
+.lockup-cell{display:flex;align-items:center;min-width:200px;min-height:40px}
+.lockup{max-height:32px;max-width:200px;width:auto;height:auto;object-fit:contain;display:block}
+.lockup-text{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.4px;
+  color:var(--text);line-height:1;white-space:nowrap;
+}
+.lockup-text .dot{color:var(--b10-blue)}
+.company-name{font-weight:600;color:var(--text);font-size:14px}
+.company-round{font-size:11px;color:var(--text-muted);font-weight:500}
+.investor-cell{display:flex;align-items:center;gap:8px;max-width:180px}
+.investor-logo{width:20px;height:20px;border-radius:4px;background:#fff;padding:1px;object-fit:contain;flex-shrink:0}
+.investor-name{font-size:12px;color:var(--text-dim)}
+.multiple{
+  display:inline-block;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:700;
+}
+.multiple.hi{background:rgba(34,197,94,0.12);color:var(--green)}
+.multiple.mid{background:rgba(234,179,8,0.12);color:var(--amber)}
+.multiple.lo{background:#EEEEEE;color:var(--text-muted)}
+.note{font-size:11px;color:var(--text-muted);max-width:260px;font-style:italic}
+
+/* CARD GRID */
+.missing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.missing-grid.two{grid-template-columns:repeat(2,1fr)}
+.missing-card{
+  background:#FFFFFF;border:1px solid var(--border);border-radius:12px;padding:22px;
+  transition:all 0.15s;box-shadow:0 2px 16px rgba(26,26,26,0.03);
+}
+.missing-card:hover{border-color:var(--b10-blue)}
+.missing-card-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.missing-card h4{font-size:16px;font-weight:700;color:var(--text)}
+.missing-card .sub{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.missing-card p{font-size:13px;color:var(--text-dim);line-height:1.55}
+.missing-card p + p{margin-top:10px}
+.missing-card p a{color:var(--b10-blue);text-decoration:none;border-bottom:1px solid rgba(69,174,235,0.3)}
+
+/* Round detail prose block */
+.round-detail{margin-bottom:8px}
+.round-detail h3{margin-top:32px}
+.round-detail p{color:var(--text-dim);font-size:15px;max-width:880px;margin-bottom:14px}
+.round-detail p a{color:var(--b10-blue);text-decoration:none;border-bottom:1px solid rgba(69,174,235,0.3)}
+.round-detail strong{color:var(--text);font-weight:600}
+.round-detail .impact{
+  display:block;background:#F4F8FB;border-left:3px solid var(--b10-blue);
+  padding:14px 18px;border-radius:4px;margin-top:6px;margin-bottom:18px;max-width:880px;
+  font-size:14px;color:var(--text-dim);
+}
+.round-detail .impact strong{color:var(--text)}
+
+/* Valuation bar viz */
+.val-bars{max-width:640px;margin:18px 0 22px;padding:18px 22px;background:#F4F8FB;border:1px solid var(--border);border-radius:10px;font-size:12px}
+.val-bar{display:grid;grid-template-columns:160px 1fr 80px;align-items:center;gap:14px;margin:8px 0}
+.val-bar .vlabel{color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.val-bar .vtrack{height:18px;background:#E6ECF2;border-radius:4px;overflow:hidden}
+.val-bar .vfill{height:100%;background:linear-gradient(90deg,#9ED4F0,var(--b10-blue));border-radius:4px}
+.val-bar .vval{font-weight:700;color:var(--text);text-align:right;font-variant-numeric:tabular-nums}
+.val-bars .axis{display:grid;grid-template-columns:160px 1fr 80px;gap:14px;color:var(--text-muted);font-size:10px;margin-top:10px}
+.val-bars .axis .ticks{display:flex;justify-content:space-between}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--border);padding:40px 32px;margin-top:40px;
+  background:#F4F8FB;
+}
+footer .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.footer-brand{font-size:14px;color:var(--text)}
+.footer-brand sup{color:var(--b10-blue)}
+.footer-meta{font-size:12px;color:var(--text-muted);text-align:right}
+.conf{
+  display:inline-block;padding:4px 10px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);
+  color:#EF4444;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border-radius:4px;
+}
+
+@media(max-width:900px){
+  h1{font-size:36px}
+  .kpi-row,.kpi-row.three,.kpi-row.two{grid-template-columns:repeat(2,1fr)}
+  .missing-grid,.missing-grid.two{grid-template-columns:1fr}
+  .val-bar{grid-template-columns:110px 1fr 70px;gap:10px}
+  .val-bars .axis{grid-template-columns:110px 1fr 70px;gap:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <svg class="brand-logo" viewBox="0 0 419 112" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Base10"><g fill="none" fill-rule="evenodd"><path d="m.96 2.92266667h39.5733333c20.9066667 0 33.0026667 12.09600003 33.0026667 28.37333333 0 10.9013333-6.8693333 19.8613333-15.5306667 22.6986667 9.5573334 2.24 18.816 11.0506666 18.816 24.7893333 0 17.3226667-13.1413333 30.016-33.152 30.016h-42.7093333zm22.9973333 42.41066663h12.8426667c8.2133333 0 13.5893333-4.3306666 13.5893333-11.4986666 0-6.8693334-4.6293333-11.3493334-13.888-11.3493334h-12.544zm0 44.2026667h14.784c9.1093334 0 14.6346667-4.7786667 14.6346667-12.3946667 0-7.3173333-5.376-12.3946666-14.6346667-12.3946666h-14.784zm59.4986667-1.1946667c0-13.1413333 9.7066667-20.608 21.952-22.4l17.472-2.688c4.032-.5973333 5.376-2.5386666 5.376-5.0773333 0-4.3306667-3.733333-8.064-10.901333-8.064-7.914667 0-12.245334 5.376-12.693334 10.9013333l-19.7119997-4.032c.896-10.6026666 10.752-24.64 32.5546667-24.64 24.042667 0 32.853333 13.44 32.853333 28.672v36.288c0 5.8239997.746667 10.7519997.896 11.4986667h-20.458666c-.149334-.597333-.746667-3.285333-.746667-8.362667-3.882667 6.272-11.050667 10.453334-20.906667 10.453334-16.277333 0-25.685333-10.752-25.685333-22.5493337zm31.210667 6.1226667c6.72 0 13.589333-3.2853333 13.589333-14.784v-3.2853333l-14.037333 2.24c-4.778667.7466666-8.362667 2.9866666-8.362667 8.2133333 0 3.8826667 2.538667 7.616 8.810667 7.616zm44.416-6.72 19.264-3.4346667c.298666 5.0773334 3.882666 10.0053334 11.648 10.0053334 5.824 0 8.661333-3.136 8.661333-6.4213334 0-2.688-1.792-4.928-7.317333-6.1226666l-8.512-1.9413334c-15.829334-3.4346666-22.101334-12.3946666-22.101334-22.848 0-13.5893333 11.946667-24.64 28.522667-24.64 21.504 0 28.970667 13.44 29.717333 22.1013334l-18.816 3.4346666c-.597333-4.928-3.733333-9.1093333-10.602666-9.1093333-4.330667 0-8.064 2.5386667-8.064 6.4213333 0 3.136 2.538666 4.928 5.824 5.5253334l9.856 1.9413333c15.381333 3.136 22.848 12.3946667 22.848 23.296 0 12.6933333-9.706667 25.088-29.568 25.088-23.296 0-30.762667-15.0826667-31.36-23.296zm88.618666-24.9386667h29.717334c-.298667-5.6746666-4.181334-12.544-14.933334-12.544-9.557333 0-14.336 7.0186667-14.784 12.544zm31.36 19.264 18.965334 5.376c-3.584 12.8426667-15.381334 23.5946667-34.197334 23.5946667-20.458666 0-38.677333-14.6346667-38.677333-39.5733333 0-23.8933334 17.770667-39.1253334 37.034667-39.1253334 22.997333 0 37.184 14.1866667 37.184 38.08 0 3.136-.298667 6.5706667-.448 7.0186667h-51.669334c.448 8.3626667 8.064 14.336 16.874667 14.336 8.213333 0 12.842667-3.8826667 14.933333-9.7066667z" fill="#111"/><path d="m345.173333 71.4666667h-16.746666v-45.0133334h-16.533334v-11.2c10.346667-.1066666 17.706667-5.9733333 18.88-13.0133333h14.4zm28.373334-34.56c0 5.5466666.64 10.9866666 2.56 15.04 1.92 3.84 5.013333 6.4 10.133333 6.4 5.226667 0 8.213333-2.56 10.133333-6.4 2.026667-4.0533334 2.666667-9.4933334 2.666667-15.04 0-5.5466667-.64-10.9866667-2.666667-15.04-1.92-3.84-4.906666-6.4-10.133333-6.4-5.12 0-8.213333 2.56-10.133333 6.4-1.92 4.0533333-2.56 9.4933333-2.56 15.04zm-16.853334 0c0-8.5333334 1.28-17.1733334 6.08-24.4266667 4.586667-6.93333333 12.266667-11.84 23.466667-11.84 11.306667 0 18.986667 4.90666667 23.573333 11.84 4.8 7.2533333 6.08 15.8933333 6.08 24.4266667 0 8.5333333-1.28 17.1733333-6.08 24.4266666-4.586666 6.8266667-12.266666 11.84-23.573333 11.84-11.2 0-18.88-5.0133333-23.466667-11.84-4.8-7.2533333-6.08-15.8933333-6.08-24.4266666z" fill="#111"/><path d="m309.333333 93.866667h108.8v16h-108.8z" fill="#45aeeb"/></g></svg>
+      <div class="brand-divider"></div>
+      <div class="brand-label">Fund III · Limited Partners</div>
+    </div>
+    <div class="eyebrow">Interim Note</div>
+    <h1>Fund III <span class="accent">Q1 2026</span> <span style="color:var(--border);font-weight:300">|</span> Fund Commentary</h1>
+    <div class="hero-meta">
+      <span><strong>$392M</strong> Fund III size</span>
+      <span><strong>2022</strong> vintage</span>
+      <span><strong>100%</strong> deployed &amp; reserved</span>
+      <span><strong>65</strong> active portfolio companies</span>
+      <span>Quarter ending <strong>Mar 31, 2026</strong></span>
+    </div>
+  </div>
+</div>
+
+<!-- OPENING LETTER -->
+<section class="letter-open">
+  <div class="container">
+    <p class="salutation">Dear Fund III Limited Partners,</p>
+    <p class="letter-body">
+      Alongside the full Q2 quarterly package, we wanted to send a short interim note covering the most material activity in the Fund III book since our last update. The quarter's headline is three meaningful markups — <strong>Slide</strong> and <strong>Loop AI</strong>, both signed in Q1, and <strong>Greenboard</strong>, whose $15.5M Base10-led Series A closed last September and will be publicly announced in May. We are also using this note to surface five late-2025 investments that did not make it into prior fund commentary: <strong>Traza AI</strong>, <strong>Keystone</strong>, <strong>Phonely</strong>, <strong>Amera</strong>, and <strong>Denki</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- FUND III METRICS -->
+<section style="padding-top:24px">
+  <div class="container">
+    <h2>Fund III Metrics <span style="font-weight:400;color:var(--text-muted);font-size:22px">(as of March 31, 2026)</span></h2>
+    <div style="height:28px"></div>
+
+    <div class="kpi-row">
+      <div class="kpi">
+        <div class="label">Fund Size</div>
+        <div class="value">$392M</div>
+        <div class="sub">2022 vintage</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Deployed &amp; Reserved</div>
+        <div class="value">100%</div>
+        <div class="sub">Fully committed</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Active Companies</div>
+        <div class="value">65</div>
+        <div class="sub">Across Fund III</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Q1 Follow-ons Closed</div>
+        <div class="value">2</div>
+        <div class="sub">Slide, Loop AI</div>
+      </div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi">
+        <div class="label">Gross MOIC</div>
+        <div class="value tk">[MOIC TK]x</div>
+        <div class="sub">Pending final mark</div>
+      </div>
+      <div class="kpi">
+        <div class="label">TVPI</div>
+        <div class="value tk">[TVPI TK]x</div>
+        <div class="sub">Pending final mark</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Net IRR</div>
+        <div class="value tk">[IRR TK]%</div>
+        <div class="sub">Pending final mark</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Wtd. Avg. Age of Investment</div>
+        <div class="value tk">[avg age TK]</div>
+        <div class="sub">Months</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT UPROUNDS TABLE -->
+<section>
+  <div class="container">
+    <h2>Fund III Recent Uprounds</h2>
+    <div style="height:28px"></div>
+
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Round</th>
+              <th>Lead</th>
+              <th>Closed / Announced</th>
+              <th>Entry Round</th>
+              <th class="num">Post at New Round</th>
+              <th class="num">Markup to Entry</th>
+              <th>Base10 Pro-rata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight">
+              <td>
+                <div class="company-cell">
+                  <img class="company-logo" src="https://icon.horse/icon/slide.com" alt="Slide">
+                  <div>
+                    <div class="company-name">Slide</div>
+                    <div class="company-round">MSP-focused BCDR platform</div>
+                  </div>
+                </div>
+              </td>
+              <td>Series B ($70M)</td>
+              <td>
+                <div class="investor-cell">
+                  <img class="investor-logo" src="https://icon.horse/icon/generalcatalyst.com" alt="">
+                  <span class="investor-name">General Catalyst</span>
+                </div>
+              </td>
+              <td>Announced Mar 10, 2026</td>
+              <td>Series A</td>
+              <td class="num">$500M</td>
+              <td class="num"><span class="multiple hi">4.0x</span></td>
+              <td class="note">$7.8M — exercising in full</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="company-cell">
+                  <img class="company-logo" src="https://icon.horse/icon/loopreturns.com" alt="Loop AI">
+                  <div>
+                    <div class="company-name">Loop AI</div>
+                    <div class="company-round">Restaurant revenue recovery</div>
+                  </div>
+                </div>
+              </td>
+              <td>Series A ($14M)</td>
+              <td>
+                <div class="investor-cell">
+                  <img class="investor-logo" src="https://icon.horse/icon/nyca.com" alt="">
+                  <span class="investor-name">NYCA</span>
+                </div>
+              </td>
+              <td>Announced Feb 2, 2026</td>
+              <td>Seed</td>
+              <td class="num"><span class="tk">[Loop post $TK]</span></td>
+              <td class="num"><span class="multiple mid"><span class="tk">[TK]</span>x</span></td>
+              <td class="note">Participating pro-rata</td>
+            </tr>
+            <tr class="highlight">
+              <td>
+                <div class="company-cell">
+                  <img class="company-logo" src="https://icon.horse/icon/greenboard.com" alt="Greenboard">
+                  <div>
+                    <div class="company-name">Greenboard</div>
+                    <div class="company-round">AI-native securities compliance</div>
+                  </div>
+                </div>
+              </td>
+              <td>Series A ($15.5M)</td>
+              <td>
+                <div class="investor-cell">
+                  <img class="investor-logo" src="https://icon.horse/icon/base10.vc" alt="">
+                  <span class="investor-name">Base10 (led)</span>
+                </div>
+              </td>
+              <td>Closed Sep 2025 · Public May 11, 2026</td>
+              <td>Seed (YC, Mar 2024)</td>
+              <td class="num">$100M</td>
+              <td class="num"><span class="multiple hi">4.0x</span></td>
+              <td class="note">Led Series A; SAFEs converted</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUND DETAILS -->
+<section>
+  <div class="container">
+    <h2>Round Details</h2>
+    <div style="height:20px"></div>
+
+    <div class="round-detail">
+      <h3 style="margin-top:8px">Slide — Series B at $500M post, 4x markup to our entry</h3>
+      <p>Slide, the MSP-focused BCDR (backup, continuity, disaster recovery) platform where Base10 led the Series A, signed a <strong>$70M Series B led by General Catalyst on March 10 at a $500M post-money valuation</strong>, a 4x markup to our Series A entry. The business scaled from $0 to $6.5M CARR in its first 9 months of selling and is tracking to cross $10M CARR before it laps the first anniversary of going to market. Base10's pro-rata allocation is $7.8M and we are exercising it in full.</p>
+
+      <div class="val-bars" aria-label="Slide valuation step-up">
+        <div class="val-bar">
+          <span class="vlabel">Entry (Series A)</span>
+          <div class="vtrack"><div class="vfill" style="width:25%"></div></div>
+          <span class="vval">$125M</span>
+        </div>
+        <div class="val-bar">
+          <span class="vlabel">Current (Series B)</span>
+          <div class="vtrack"><div class="vfill" style="width:100%"></div></div>
+          <span class="vval">$500M</span>
+        </div>
+        <div class="axis"><span></span><div class="ticks"><span>0</span><span>$100M</span><span>$200M</span><span>$300M</span><span>$400M</span><span>$500M</span></div><span></span></div>
+      </div>
+
+      <div class="impact"><strong>Fund III impact:</strong> Slide is now marked at 2.8x Gross MOIC, making it the fund's 2nd highest position by MOIC. The markup is the single largest contributor to Fund III's Q1 TVPI step-up.</div>
+    </div>
+
+    <div class="round-detail">
+      <h3>Loop AI — Series A at $14M, announced February 2</h3>
+      <p>Loop AI announced a <strong>$14M Series A led by NYCA</strong> at <span class="tk">[Loop post $TK]</span> post-money. Loop is our freight-claims and parcel-recovery AI platform and still one of the clearest examples in the book of the real-economy-agent thesis: the business went $0 to $4M to $14M revenue in 24 months across popular restaurant chains including Lazy Dog and Starbird. Base10 led the seed and participated pro-rata in the Series A.</p>
+      <div class="impact"><strong>Fund III impact:</strong> Loop AI is now marked at 1.9x Gross MOIC.</div>
+    </div>
+
+    <div class="round-detail">
+      <h3>Greenboard — Series A at $100M post, 4x markup to our entry</h3>
+      <p>Greenboard, the AI-native securities compliance platform where Base10 led the seed in March 2024, closed its <strong>$15.5M Series A led by Base10 at a $100M post-money valuation</strong> in September 2025, a 4x markup to our $25M-post seed entry. Our seed SAFEs converted at the Series A.</p>
+      <p>The business grew roughly 7x in 2025, from $400K ARR at the start of the year to $2.8M signed ARR by year-end and crossed $3M ARR in January 2026. Q1 2026 was Greenboard's first $1M quarter, ending at $3.8M signed ARR against a $4M plan, with a 2026 target of $10M live ARR. Greenboard now serves 500+ financial institutions with 99%+ customer retention.</p>
+      <div class="impact"><strong>Fund III impact:</strong> Greenboard is now marked at 1.4x Gross MOIC.</div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW INVESTMENTS -->
+<section>
+  <div class="container">
+    <h2>New Fund III Investments</h2>
+    <p class="section-intro" style="font-size:16px;max-width:880px;margin-top:18px">Five Fund III investments closed in the back half of 2025 that were not surfaced in prior fund commentary. Each is summarized briefly below; full investment memos are available on request. These are all very early in their lives in the book, held at cost, and sized accordingly.</p>
+
+    <div class="table-wrap" style="margin-bottom:40px">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Round</th>
+              <th class="num">Base10 Check</th>
+              <th class="num">Valuation (Post)</th>
+              <th class="num">Ownership</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="lockup-cell">
+                  <img class="lockup" src="assets/traza-lockup.png" alt="Traza AI">
+                </div>
+              </td>
+              <td>Seed</td>
+              <td class="num">$1.8M</td>
+              <td class="num">$10M</td>
+              <td class="num">18%</td>
+              <td class="note">Base10-led</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="lockup-cell">
+                  <img class="lockup" src="assets/keystone-lockup.png" alt="Keystone">
+                </div>
+              </td>
+              <td>Seed</td>
+              <td class="num">$5M</td>
+              <td class="num">$37.5M</td>
+              <td class="num">13.33%</td>
+              <td class="note">Base10-led</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="lockup-cell">
+                  <img class="lockup" src="assets/phonely-lockup.png" alt="Phonely">
+                </div>
+              </td>
+              <td>Series A</td>
+              <td class="num">$12M</td>
+              <td class="num">$115M</td>
+              <td class="num">10.87%</td>
+              <td class="note">Base10-led</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="lockup-cell">
+                  <img class="lockup" src="assets/amera-lockup.png" alt="Amera">
+                </div>
+              </td>
+              <td>Seed (YC)</td>
+              <td class="num">$2.5M</td>
+              <td class="num">$30M</td>
+              <td class="num">10%</td>
+              <td class="note">Base10-led (YC seed)</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="lockup-cell">
+                  <img class="lockup" src="assets/denki-lockup.png" alt="Denki">
+                </div>
+              </td>
+              <td>Seed (YC)</td>
+              <td class="num">$1.5M</td>
+              <td class="num">$25M</td>
+              <td class="num">6%</td>
+              <td class="note">Co-lead with Shine Capital</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="missing-grid">
+      <div class="missing-card">
+        <div class="missing-card-header">
+          <img class="company-logo" src="https://icon.horse/icon/traza.ai" alt="Traza AI">
+          <div>
+            <h4>Traza AI</h4>
+            <div class="sub">Seed · Base10-led</div>
+          </div>
+        </div>
+        <p>Announced publicly via VentureBeat in February 2026. Added to the Fund III book late in 2025. <span class="tk">[One-line thesis TK — pull from Seed/Series A investment memo.]</span> <span class="tk">[Traza check $TK]</span> at <span class="tk">[Traza post $TK]</span>.</p>
+      </div>
+
+      <div class="missing-card">
+        <div class="missing-card-header">
+          <img class="company-logo" src="https://icon.horse/icon/keystone.com" alt="Keystone">
+          <div>
+            <h4>Keystone</h4>
+            <div class="sub">Seed · Base10-led · Oct 2025</div>
+          </div>
+        </div>
+        <p>Repeat founder investment with Rahul Jawsa. Fund III led with a <strong style="color:var(--text)">$5M check at $37.5M post-money</strong>. <span class="tk">[One-line thesis TK — confirm product scope and wedge with Rexhi.]</span></p>
+      </div>
+
+      <div class="missing-card">
+        <div class="missing-card-header">
+          <img class="company-logo" src="https://icon.horse/icon/phonely.ai" alt="Phonely">
+          <div>
+            <h4>Phonely</h4>
+            <div class="sub">Series A · Base10-led · Dec 2025</div>
+          </div>
+        </div>
+        <p>AI voice automation platform for real-economy enterprises — the platform lets businesses build voice agents that handle inbound and outbound calls to qualify customers, schedule appointments, and scale to millions of calls. Use cases today span lead qualification, answering services, appointment scheduling, and AI receptionists in healthcare, home services, and adjacent real-economy verticals.</p>
+        <p>Fund III led the Series A with a <strong style="color:var(--text)">$12M check of a $15M round at a $115M post-money valuation</strong> (10.4% ownership).</p>
+      </div>
+
+      <div class="missing-card">
+        <div class="missing-card-header">
+          <img class="company-logo" src="https://icon.horse/icon/amera.com" alt="Amera">
+          <div>
+            <h4>Amera</h4>
+            <div class="sub">Seed · Base10-led · Aug 2025</div>
+          </div>
+        </div>
+        <p>Amera is automating claims processing workflows for health insurance payors. The team is treating the source of the problem (claims data automation at the payor) rather than its symptoms — relevant given how much is stuck in this part of healthcare. Part of our tighter, more intentional YC batch approach (20–25 companies evaluated with 24-hour decisions, rather than 50+).</p>
+        <p>Fund III led the YC seed round with a <strong style="color:var(--text)">$2.5M SAFE at $30M post-money</strong>.</p>
+      </div>
+
+      <div class="missing-card">
+        <div class="missing-card-header">
+          <img class="company-logo" src="https://icon.horse/icon/denki.com" alt="Denki">
+          <div>
+            <h4>Denki</h4>
+            <div class="sub">Seed · Co-led · Aug 2025</div>
+          </div>
+        </div>
+        <p>Denki is automating internal audit workflows (planning, testing, documentation) for financial-regulatory compliance, augmenting in-house audit teams and working inside existing systems like Auditboard and Workiva.</p>
+        <p>Original Fund III investment was <strong style="color:var(--text)">$1.25M at a $25M post-money cap</strong> (5% ownership) via SAFE. The founder subsequently offered us an additional $250K allocation to bring us to <strong style="color:var(--text)">$1.5M / 6% ownership</strong>, which we took; Shine Capital co-leads at the same size.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTLOOK -->
+<section>
+  <div class="container">
+    <h2>Fund III Outlook</h2>
+    <p class="letter-body" style="margin-top:20px">
+      Across the Fund III book, we are tracking <span class="tk">[# follow-ons expected TK]</span> additional portfolio companies at late-stage fundraising discussions likely to close in Q2 or Q3. No write-downs or impairments were taken in Q1. Fund III-specific performance detail — including Greenboard, Traza AI, Keystone, Phonely, Amera, and Denki initial and updated marks — will be reviewed in depth at the 2026 AGM.
+    </p>
+    <p class="letter-body" style="margin-top:20px">
+      For any fund-level or LPA questions, please reach out to Inigo (<a href="mailto:inigo@base10.vc" style="color:var(--b10-blue);text-decoration:none;border-bottom:1px solid rgba(69,174,235,0.3)">inigo@base10.vc</a>).
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">Base<sup>10</sup> Partners</div>
+      <div style="font-size:12px;color:var(--text-muted);margin-top:4px">Prepared by the Base10 team</div>
+    </div>
+    <div class="footer-meta">
+      <div class="conf">Confidential</div>
+      <div style="margin-top:6px">Fund III · Q1 2026 · Fund Commentary</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function lockupFallback(img){
+    var name = (img.getAttribute('alt') || '').trim() || 'Company';
+    var span = document.createElement('span');
+    span.className = 'lockup-text';
+    span.textContent = name;
+    img.replaceWith(span);
+  }
+  function fallback(img){
+    var isCompany = img.classList.contains('company-logo');
+    var isAvatar = img.classList.contains('avatar');
+    var isInvestor = img.classList.contains('investor-logo');
+    var isChip = img.parentElement && img.parentElement.classList.contains('chip');
+    var size = isAvatar ? 44 : (isCompany ? 32 : (isChip ? 14 : 20));
+    var radius = isAvatar ? 22 : (isCompany ? 8 : (isChip ? 3 : 4));
+    var fontSize = isAvatar ? 16 : (isCompany ? 14 : (isChip ? 9 : 10));
+    var bg = isAvatar ? '#E6ECF2' : '#45AEEB';
+    var fg = isAvatar ? '#6C757D' : '#fff';
+    var name = img.getAttribute('alt') || '';
+    if(!name){
+      var p = img.closest('.company-cell, .investor-cell, .missing-card-header, .chip');
+      if(p){
+        var el = p.querySelector('.company-name, .investor-name, h4');
+        if(el) name = el.textContent;
+        else if(p.classList.contains('chip')) name = p.textContent;
+      }
+    }
+    name = (name||'?').trim();
+    var initial = isAvatar ? name.split(/\s+/).map(function(w){return w.charAt(0).toUpperCase();}).slice(0,2).join('') : name.charAt(0).toUpperCase();
+    var div = document.createElement('span');
+    div.textContent = initial;
+    div.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;width:'+size+'px;height:'+size+'px;min-width:'+size+'px;border-radius:'+radius+'px;background:'+bg+';color:'+fg+';font-weight:700;font-size:'+fontSize+'px;flex-shrink:0;border:1px solid #E6ECF2;';
+    img.replaceWith(div);
+  }
+  function check(img){
+    var isLockup = img.classList.contains('lockup');
+    var handler = isLockup ? lockupFallback : fallback;
+    if(img.complete){
+      if(img.naturalWidth === 0) handler(img);
+    } else {
+      img.addEventListener('error', function(){ handler(img); });
+      img.addEventListener('load', function(){ if(img.naturalWidth === 0) handler(img); });
+    }
+  }
+  document.querySelectorAll('img.company-logo, img.investor-logo, img.avatar, img.lockup, .chip img').forEach(check);
+})();
+</script>
+
+</body>
+</html>
